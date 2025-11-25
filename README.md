@@ -1,7 +1,7 @@
 # pdv-typescript
-
+---
 Desenvolver uma aplicação para um Ponto de Venda (PDV) com banco de dados SQLite.
-
+---
 ### Camadas:
 1. Models: Interfaces representando usuários, produtos, compras e itens das compras.
 2. Acesso ao Banco de Dados: Criar schema, inserir, listar, alterar e deletar.
