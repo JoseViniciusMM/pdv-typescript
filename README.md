@@ -1,14 +1,17 @@
 # pdv-typescript
 
-desenvolver una aplcaçio para un (Ponto Oe Venda) banco de dús SQLite.
-(nadas
-i) Hodels: \nterfaces representedo usuirbs. Pró'tos. Comras e Itens das Covas
-2) acesso ao banco de dados (criar scF•ena, Insertr, ustar, alterar e deletar)
-3) regras negócto
-4) Controller: funçbes para produto, Itstar produtos, real\tar corçras, etc..
-Regras de negóci,o
-• Vendas no PIX ten Si de desconto
-• Vendas no débito n" ten desconto e nen acrésclro
-• Vendas no crédlto ten acrésdM e podem ser parcelas en
-Controlter (regras de neecto) Repsltory
-func•o ReatuarVerda(venda: Venda) fuxao RealúarVenda() regras de neq*lc gravarVerda(SQ.i
+Desenvolver uma aplicação para um Ponto de Venda (PDV) com banco de dados SQLite.
+
+## Camadas:
+1. Models: Interfaces representando usuários, produtos, compras e itens das compras.
+2. Acesso ao Banco de Dados: Criar schema, inserir, listar, alterar e deletar.
+3. Regras de Negócio.
+4. Controller: Funções para produto, listar produtos, realizar compras, etc.
+
+## Regras de Negócio:
+Vendas no PIX têm 5% de desconto. (Assumi que "Si" era um erro de digitação para 5% ou Sim)
+Vendas no débito não têm desconto e nem acréscimo.
+Vendas no crédito têm acréscimo e podem ser parceladas.
+
+## Fluxo Controller / Repository:
+Função RealizarVenda(venda: Venda) -> Regras de Negócio -> gravarVenda(SQL)
